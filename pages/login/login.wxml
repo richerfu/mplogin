@@ -1,0 +1,4 @@
+<view>
+  <button open-type='getUserInfo' bindgetuserinfo='login' wx:if="{{ canIUse }}">登录</button>
+  <button bindtap='lowLogin' wx:if="{{ !canIUse }}">登录</button>
+</view>
